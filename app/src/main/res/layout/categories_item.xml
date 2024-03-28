@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/categoriesBtn"
+	android:layout_width="@dimen/margin_88"
+	android:layout_height="@dimen/margin_32"
+	android:layout_marginBottom="@dimen/margin_8"
+	android:layout_marginEnd="@dimen/margin_8"
+	android:insetBottom="@dimen/margin_0"
+	android:padding="@dimen/margin_0"
+	android:textSize="@dimen/text_size_13"
+	app:cornerRadius="@dimen/margin_6"/>
