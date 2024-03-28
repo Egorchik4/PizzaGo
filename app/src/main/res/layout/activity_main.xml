@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:fitsSystemWindows="true"
-	tools:context=".MainActivity">
-	<TextView
-		android:id="@+id/textView"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="TextView"/>
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintEnd_toEndOf="parent"
+	app:layout_constraintTop_toTopOf="parent"
+	tools:context=".presentation.navigation.MainActivity">
+
+	<androidx.fragment.app.FragmentContainerView
+		android:id="@+id/fragmentContainer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="?attr/actionBarSize"/>
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/nav_view"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_gravity="bottom"
+		android:background="@color/grey_background"
+		app:itemActiveIndicatorStyle="@style/Animation.Design.BottomSheetDialog"
+		app:menu="@menu/bottom_navigation_menu"
+		app:itemIconTint="@color/bottom_nav_color"
+		app:itemTextColor="@color/bottom_nav_color"/>
 </FrameLayout>

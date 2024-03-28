@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/margin_151">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:padding="@dimen/margin_10"
+		android:gravity="center_vertical|start">
+
+		<ImageView
+			android:id="@+id/icPizza"
+			android:layout_width="@dimen/margin_135"
+			android:layout_height="@dimen/margin_135"/>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginStart="@dimen/margin_22"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/pizzaName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/text_title_color"
+				android:fontFamily="@font/roboto_medium"
+				android:textSize="@dimen/text_size_16"/>
+
+			<TextView
+				android:id="@+id/pizzaDescription"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginVertical="@dimen/margin_8"
+				android:layout_weight="1"
+				android:maxLines="3"
+				android:textColor="@color/text_description_color"
+				android:textSize="@dimen/text_size_14"/>
+
+			<com.google.android.material.button.MaterialButton
+				android:id="@+id/btnPrice"
+				android:layout_width="@dimen/margin_87"
+				android:layout_height="@dimen/margin_32"
+				android:layout_gravity="end|bottom"
+				android:layout_weight="0"
+				android:textColor="@color/red"
+				android:textAllCaps="false"
+				android:insetBottom="@dimen/margin_0"
+				android:padding="@dimen/margin_0"
+				android:fontFamily="@font/roboto_medium"
+				android:textSize="@dimen/text_size_13"
+				app:cornerRadius="@dimen/margin_10"
+				app:strokeColor="@color/red"
+				style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.cardview.widget.CardView>
